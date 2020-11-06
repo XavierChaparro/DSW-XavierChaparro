@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unad</title>
+    <link rel="stylesheet" href="src/styles/styles.css">
+
+</head>
+<body>
+    <main class="main_container">
+        <div class="Header">
+            <div class="Header_content">
+                <img 
+                    src = "./src/assets/img/logo.png" 
+                    alt = "logo.png"
+                >
+                <div
+                    class = "navigation"
+                    id = "navigation"
+                    onclick="handleLinks()"
+                ></div>
+            </div>
+            <div id = "mobile_links" class="linksMobile hidden_links">
+                <div class="father_link">
+                    <a class="principal_link" href="/Unan/index.html">Inicio</a>
+                </div>
+                <div class="father_link">
+                    <a class="principal_link" href="/Unan/github.html">Conceptos</a>
+                    <ul class="child_links">
+                        <li>
+                            <a href="/Unan/github.html">Github</a>
+                        </li>
+                        <li>
+                            <a href="/Unan/Unad.html">Unad</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="father_link">
+                    <a class="principal_link" href="/index.html">Recursos</a>
+                    <ul class="child_links">
+                        <li>
+                            <a href="/Unan/Recurso1.html">Recurso 1</a>
+                        </li>
+                        <li>
+                            <a href="/Unan/Recurso2.html">Recurso 2</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="father_link">
+                    <a class="principal_link" href="#">AutoEvaluación</a>
+                    <ul class="child_links">
+                        <li>
+                            <a href="#">AutoEvaluación 1</a>
+                        </li>
+                        <li>
+                            <a href="#">AutoEvaluación 2</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="father_link">
+                    <a class="principal_link" href="/Unan/Author.html">Autor</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Body-->
+        <div class="HomeContent">
+            <div class="overall">
+
+                <h2>
+                    Universidad Nacional Unad
+                </h2>
+                <p>
+                    GitHub es una forja para alojar proyectos utilizando el sistema de control de versiones Git. Se utiliza principalmente para la creación de código fuente de programas de ordenador. El software que opera GitHub fue escrito en Ruby on Rails. Desde enero de 2010, GitHub opera bajo el nombre de GitHub, Inc.
+                </p>
+                <h2>
+                    Acerca de la universidad
+                </h2>
+                <div class="objectives">
+                    <div>
+                        <strong>Misión</strong>
+                        <p>
+                            La Universidad Nacional Abierta y a Distancia (UNAD) tiene como misión contribuir a la educación para todos a través de la modalidad abierta, a distancia y en ambientes virtuales de aprendizaje, mediante la acción pedagógica, la proyección social, el desarrollo regional y la proyección comunitaria, la inclusión, la investigación, la internacionalización y las innovaciones metodológicas y didácticas, con la utilización de las tecnologías de la información y las comunicaciones para fomentar y acompañar el aprendizaje autónomo, generador de cultura y espíritu emprendedor que, en el marco de la sociedad global y del conocimiento, propicie el desarrollo económico, social y humano sostenible de las comunidades locales, regionales y globales con calidad, eficiencia y equidad social. 
+                        </p>
+                    </div>
+                    <div>
+                        <strong>Visión</strong>
+                        <p>
+                            Se proyecta como una organización líder en Educación Abierta y a Distancia, reconocida a nivel nacional e internacional por la calidad innovadora y pertinencia de sus ofertas y servicios educativos y por su compromiso y aporte de su comunidad académica al desarrollo humano sostenible, de las comunidades locales y globales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Body-->
+    </main>
+
+    <script src="js/header.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>

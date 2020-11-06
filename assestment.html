@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unad</title>
+    <link rel="stylesheet" href="src/styles/styles.css">
+</head>
+<body>
+    <main class="main_container">
+        <div class="Header">
+            <div class="Header_content">
+                <img 
+                    src = "./src/assets/img/logo.png" 
+                    alt = "logo.png"
+                >
+                <div
+                    class = "navigation"
+                    id = "navigation"
+                    onclick="handleLinks()"
+                ></div>
+            </div>
+            <div id = "mobile_links" class="linksMobile hidden_links">
+                <div class="father_link">
+                    <a class="principal_link" href="/Unan/index.html">Inicio</a>
+                </div>
+                <div class="father_link">
+                    <a class="principal_link" href="/Unan/github.html">Conceptos</a>
+                    <ul class="child_links">
+                        <li>
+                            <a href="/Unan/github.html">Github</a>
+                        </li>
+                        <li>
+                            <a href="/Unan/Unad.html">Unad</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="father_link">
+                    <a class="principal_link" href="/index.html">Recursos</a>
+                    <ul class="child_links">
+                        <li>
+                            <a href="/Unan/github.html">Github</a>
+                        </li>
+                        <li>
+                            <a href="/Unan/Unad.html">Unad</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="father_link">
+                    <a class="principal_link" href="#">AutoEvaluación</a>
+                    <ul class="child_links">
+                        <li>
+                            <a href="#">AutoEvaluación 1</a>
+                        </li>
+                        <li>
+                            <a href="#">AutoEvaluación 2</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="father_link">
+                    <a class="principal_link" href="/Unan/Author.html">Autor</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Body-->
+        <div class="HomeContent">
+            <div class="overall">
+                <p>
+                    En la siguiente pagina se desarrollan los conceptos relacionados a la materia diseño de sitios web, la cual tiene como objetivo conocer las estructuras esenciales para la construcción de un sitio web con las herramientas necesarias para construir un sitio con una estructura y visualización adecuada.
+                </p>
+
+                <h2>
+                    Objetivos
+                </h2>
+                <div class="objectives">
+                    <div>
+                        <strong>Generales</strong>
+                        <p>
+                            Poner en practica los conocimientos adquiridos en el estudio de la unidad, el cual se enfoca en el diseño, el uso de editores de codigo y el control de versiones.
+                        </p>
+                    </div>
+                    <div>
+                        <strong>Especificos:</strong>
+                        <ol>
+                            <li>
+                                <span>
+                                    Manejo de etiquetas HTML
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    Estilos con CSS
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    Secciones y atributos
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    Control de versiones
+                                </span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="twitter">
+                    <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> 
+                </div>
+            </div>
+        </div>
+        <!--Body-->
+    </main>
+    <script src="js/header.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
