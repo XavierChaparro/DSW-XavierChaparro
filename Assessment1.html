@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unad</title>
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+</head>
+<body>
+    <main class="main_container">
+        <div class="Header">
+            <div class="Header_content" id = "Header_content">
+                <img 
+                    src = "./src/assets/img/logo.png" 
+                    alt = "logo.png"
+                >
+                <div
+                    class = "navigation"
+                    id = "navigation"
+                    onclick="handleLinks()"
+                ></div>
+            </div>
+            <div id = "mobile_links" class="linksMobile hidden_links">
+                
+            </div>
+        </div>
+
+        <!--Body-->
+        <div class="HomeContent">
+            <div id = "FormQuestions">
+                
+            </div>
+        </div>
+        
+        <!--Body-->
+    </main>
+    <script src="js/header.js"></script>
+    <script type="text/babel" src="js/Asks.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>

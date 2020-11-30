@@ -1,10 +1,11 @@
 .hidden_links
     height: 0
-    a
+    a, div
         visibility: hidden
         height: 0
         color: $Black
         text-decoration: none
+        display: none !important
 #mobile_links
     padding-top: 8px
     div
@@ -49,12 +50,13 @@
                 .child_links
                     display: block
                     list-style: none
+                a
+                    transition-duration: .3s
 
             a
                 text-decoration: none
                 color: $Black
                 opacity: .6
-                transition-duration: .3s
             .child_links
                 display: none
                 li

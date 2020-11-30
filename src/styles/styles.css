@@ -16,11 +16,12 @@ body {
 .hidden_links {
   height: 0;
 }
-.hidden_links a {
+.hidden_links a, .hidden_links div {
   visibility: hidden;
   height: 0;
   color: #000000;
   text-decoration: none;
+  display: none !important;
 }
 
 #mobile_links {
@@ -79,11 +80,13 @@ body {
   display: block;
   list-style: none;
 }
+.Header #mobile_links .father_link:hover a {
+  transition-duration: 0.3s;
+}
 .Header #mobile_links .father_link a {
   text-decoration: none;
   color: #000000;
   opacity: 0.6;
-  transition-duration: 0.3s;
 }
 .Header #mobile_links .father_link .child_links {
   display: none;
@@ -133,6 +136,41 @@ body {
   height: 50vh;
   padding-bottom: 20px;
   width: 50%;
+}
+
+#FormQuestions {
+  display: flex;
+  background: #ffffff;
+  padding: 20px;
+}
+#FormQuestions .FormQuestion_container .FormSection {
+  padding-bottom: 20px;
+}
+#FormQuestions .FormQuestion_container .FormSection label, #FormQuestions .FormQuestion_container .FormSection input, #FormQuestions .FormQuestion_container .FormSection select {
+  display: block;
+}
+#FormQuestions .FormQuestion_container .FormSection label {
+  padding-bottom: 10px;
+}
+#FormQuestions .FormQuestion_container .FormSection input {
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  border-color: #cccccc;
+}
+#FormQuestions .FormQuestion_container button {
+  outline: none;
+  color: #ffffff;
+  background: #69CB07;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+#FormQuestions .FormQuestion_container button:hover {
+  background: #59AE05;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

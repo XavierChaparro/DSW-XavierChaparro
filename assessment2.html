@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unad</title>
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css" media="all">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/jquery-ui.css">
+    <link href="assets/jquery.tagit.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="assets/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/wordfind.js"></script>
+    <script type="text/javascript" src="assets/wordfindgame.js"></script>
+    <script type="text/javascript" src="assets/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/tag-it.js"></script>
+</head>
+
+<body>
+    <main class="main_container">
+        <div class="Header">
+            <div class="Header_content" id="Header_content">
+                <img src="./src/assets/img/logo.png" alt="logo.png">
+                <div class="navigation" id="navigation" onclick="handleLinks()"></div>
+            </div>
+            <div id="mobile_links" class="linksMobile hidden_links">
+
+            </div>
+        </div>
+
+        <!--Body-->
+        <div class="HomeContent">
+            <div id="Words">
+                <style media="print">
+                    .ocultar {
+                        display: none;
+                    }
+
+                    .col-md-3 {
+                        width: 25%;
+                        float: left;
+                    }
+
+                    .col-md-9 {
+                        width: 75%;
+                        float: left;
+                    }
+                </style>
+
+                <div class="container">
+                    <div class="row">
+
+                        <script type="text/javascript">
+                            var mytag;
+                            $(document).ready(function () {
+                                mytag = $("#myTags").tagit({});
+                                Crear();
+                            });
+                        </script>
+                        <div class="row  ocultar text-center">
+                            <br />
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4>1.- Escribe las palabras, luego presiona el botón <strong>"Crear Juego"</strong>
+                                    </h4>
+                                </div>
+                                <div class="panel-body">
+                                    <ul id="myTags">
+                                        <li>css</li>
+                                        <li>style</li>
+                                        <li>html</li>
+                                        <li>sass</li>
+                                        <li>backend</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+
+
+                        <div class="row text-center">
+                            <div class="ocultar">
+                                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                <!-- Header -->
+                                <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px"
+                                    data-ad-client="ca-pub-4331617637495482" data-ad-slot="2764029251"></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script><br /><br />
+                            </div>
+                            <div>
+
+                                <div class="row">
+
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading ocultar">
+                                            <h4>2.- Crea la sopa e imprimela o simplemente resuelvela online</h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="ocultar">
+                                                <button onclick="Crear();" class="btn btn-success btn-lg"> Crear
+                                                    Juego</button>
+                                                <button onclick="window.print();" class="btn btn-info btn-lg ">
+                                                    Imprimir</button>
+                                                <button id='solve' class="btn btn-danger btn-lg"> Resolver</button>
+                                                <!-- <a href="#" class="btn btn-default btn-lg" > Descargar</a>-->
+                                            </div>
+                                            <div class="row">
+
+
+                                                <div class="col-md-3">
+                                                    <div id='Palabras'></div>
+
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <div id='juego'></div>
+
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+
+                                        </div>
+
+
+
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+
+
+                                <script>
+                                    var words = [];
+                                    var gamePuzzle;
+                                    function Crear() {
+
+                                        datos = mytag[0].textContent.trim().split("×");
+
+                                        for (i = 0; i < (datos.length) - 1; i++) {
+                                            words.push(datos[i]);
+
+                                        }
+                                        $('#Juegos').show();
+                                        gamePuzzle = wordfindgame.create(datos, '#juego', '#Palabras');
+                                        var puzzle = wordfind.newPuzzle(datos, { height: 18, width: 18, fillBlanks: false });
+                                        wordfind.print(puzzle);
+                                    }
+                                    $('#solve').click(function () { wordfindgame.solve(gamePuzzle, words); });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Body-->
+    </main>
+    <script src="js/header.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+
+</html>
