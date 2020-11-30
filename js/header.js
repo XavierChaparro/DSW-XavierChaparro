@@ -40,7 +40,7 @@ links_header.innerHTML = `
                 <a href="Assessment1.html">AutoEvaluación 1</a>
             </li>
             <li>
-                <a href="Assessment2.html">AutoEvaluación 2</a>
+                <a href="assessment2.html">AutoEvaluación 2</a>
             </li>
         </ul>
         </div>
