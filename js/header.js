@@ -1,4 +1,4 @@
-let activate = true; // if yes the links are hidden
+﻿let activate = true; // if yes the links are hidden
 const mobile_links = document.getElementById('mobile_links');
 const handleLinks = () => {
     activate ? mobile_links.classList.remove('hidden_links')
@@ -40,7 +40,7 @@ links_header.innerHTML = `
                 <a href="Assessment1.html">AutoEvaluación 1</a>
             </li>
             <li>
-                <a href="Assessment2.html">AutoEvaluación 2</a>
+                <a href="assessment2.html">AutoEvaluación 2</a>
             </li>
         </ul>
         </div>
